@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="50" height="50" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="tmw_desert_spacing" tilewidth="32" tileheight="32" spacing="1" margin="1">
+  <image source="C:/Users/陸離/Desktop/TileGameResources/tmw_desert_spacing.png" width="265" height="199"/>
+ </tileset>
+ <tileset firstgid="49" name="ground" tilewidth="800" tileheight="32">
+  <image source="../images/ground.png" width="800" height="36"/>
+ </tileset>
+ <tileset firstgid="50" name="wheel-large" tilewidth="352" tileheight="352">
+  <image source="../images/wheel-large.png" width="352" height="352"/>
+ </tileset>
+ <tileset firstgid="51" name="wheel-large2" tilewidth="352" tileheight="352">
+  <image source="../images/wheel-large2.png" width="352" height="352"/>
+  <terraintypes>
+   <terrain name="新地形" tile="0"/>
+  </terraintypes>
+ </tileset>
+ <tileset firstgid="52" name="background" tilewidth="900" tileheight="675">
+  <image source="../background.png" width="900" height="675"/>
+ </tileset>
+ <layer name="块层 1" width="50" height="50">
+  <data encoding="base64" compression="zlib">
+   eJztziEBAAAIA7CHon829C0GsyVYAgAAAAAAAAAAwMV8BygLeFAANQ==
+  </data>
+ </layer>
+ <objectgroup name="far" width="50" height="50">
+  <object type="GearWheel" gid="50" x="552" y="1751"/>
+ </objectgroup>
+ <layer name="Ground" width="50" height="50">
+  <data encoding="base64" compression="zlib">
+   eJztzQEBAAAIAiAv+f+cPwoOkAAAAAAAAAAAAPBZjxwDYHwAYw==
+  </data>
+ </layer>
+ <objectgroup name="Objects" width="50" height="50">
+  <object name="SpawnPoint" x="165" y="1528" width="30" height="27"/>
+ </objectgroup>
+ <objectgroup name="Near" width="50" height="50">
+  <object gid="51" x="-97" y="1884"/>
+ </objectgroup>
+</map>
